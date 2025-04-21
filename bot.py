@@ -3,7 +3,8 @@ from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filte
 from PIL import Image
 import io
 
-BOT_TOKEN = '7609953248:AAFbKD9vX7islPDwapF0qorkhWd-fqaJY-0'
+import os
+BOT_TOKEN = os.getenv("7609953248:AAFbKD9vX7islPDwapF0qorkhWd-fqaJY-0")
 
 # Load logos once at startup
 logo_kiri = Image.open("logo_kiri.png").convert("RGBA")
